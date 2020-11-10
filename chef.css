@@ -1,0 +1,14 @@
+@import "reset.css";
+@import "basic.css";
+
+.box {
+  margin: 30px 0 50px 0;
+  display: flex;
+  align-items: center;
+}
+
+.cate {
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px 0 50px;
+}

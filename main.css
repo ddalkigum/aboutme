@@ -1,0 +1,49 @@
+@import "reset.css";
+@import "basic.css";
+
+h2 {
+  color: white;
+  font-size: 3rem;
+}
+
+h3 {
+  color: rgb(128, 128, 128);
+}
+
+h4 {
+  color: white;
+}
+
+.info {
+  width: 70%;
+  margin: 50px 0 100px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-box {
+  width: 100%;
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10%;
+}
+
+.info-box__top {
+  margin-bottom: -6%;
+}
+
+.info-box__bottom {
+  margin-top: -6%;
+}
+
+.info-cate {
+  background-color: skyblue;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,64 @@
+@import "reset.css";
+
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  width: 90%;
+  height: 150px;
+  border-bottom: rgb(170, 170, 170) 1px solid;
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  height: 80px;
+  width: 80px;
+  margin: 10px 0 0 40px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 30px;
+  text-align: center;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  border-radius: 100%;
+  border: 2px rgb(230, 229, 229) solid;
+  z-index: 3;
+}
+
+li {
+  padding: 0 20px 0 20px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact ul {
+  display: flex;
+  height: 75px;
+  font-size: 3rem;
+}
+
+footer {
+  width: 90%;
+  height: 150px;
+  border-top: rgb(170, 170, 170) 1px solid;
+}
