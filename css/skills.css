@@ -1,10 +1,11 @@
-@import "reset.css";
-@import "basic.css";
+@import "./reset.css";
+@import "./basic.css";
+@import "./nav.css";
 
 .skill_box {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  margin: 30px 0 50px 0;
+  margin: 200px 0 50px 0;
 }

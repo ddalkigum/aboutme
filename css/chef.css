@@ -1,8 +1,9 @@
-@import "reset.css";
-@import "basic.css";
+@import "./reset.css";
+@import "./basic.css";
+@import "./nav.css";
 
 .box {
-  margin: 30px 0 50px 0;
+  margin: 200px 0 50px 0;
   display: flex;
   align-items: center;
 }

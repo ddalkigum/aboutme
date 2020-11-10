@@ -1,4 +1,4 @@
-@import "reset.css";
+@import "./reset.css";
 
 * {
   font-family: "Noto Sans KR", sans-serif;
@@ -14,10 +14,14 @@ body {
 
 nav {
   width: 90%;
-  height: 150px;
+  height: 125px;
   border-bottom: rgb(170, 170, 170) 1px solid;
   display: flex;
+  justify-content: spacebetween;
   align-items: center;
+  position: fixed;
+  background-color: white;
+  z-index: 10;
 }
 
 nav img {

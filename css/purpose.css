@@ -1,0 +1,9 @@
+@import "./reset.css";
+@import "./basic.css";
+@import "./nav.css";
+
+main {
+  margin: 200px 0 50px 0;
+  line-height: 30px;
+  white-space: pre;
+}

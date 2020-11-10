@@ -1,5 +1,5 @@
-@import "reset.css";
-@import "basic.css";
+@import "./reset.css";
+@import "./basic.css";
 
 h2 {
   color: white;
@@ -12,11 +12,12 @@ h3 {
 
 h4 {
   color: white;
+  margin-top: 12px;
 }
 
 .info {
   width: 70%;
-  margin: 50px 0 100px 0;
+  margin: 200px 0 100px 0;
 
   display: flex;
   flex-direction: column;
@@ -40,7 +41,7 @@ h4 {
 }
 
 .info-cate {
-  background-color: skyblue;
+  background-color: #46b3e6;
   border-radius: 30px;
   display: flex;
   flex-direction: column;

@@ -1,0 +1,30 @@
+@import "./reset.css";
+@import "./basic.css";
+@import "./nav.css";
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 200px 0 50px 0;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me {
+  margin: 30px 0 30px 0;
+  white-space: pre;
+}
+
+.about-me span {
+  line-height: 30px;
+}
