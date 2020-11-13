@@ -1,0 +1,201 @@
+@import "reset.css";
+
+@font-face {
+  font-family: "NEXON Lv2 Gothic Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:visited,
+:active,
+:focus,
+:link {
+  color: black;
+}
+
+* {
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: "NEXON Lv2 Gothic OTF";
+  font-weight: 500;
+}
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-left: 30px;
+}
+nav {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(233, 233, 233);
+  border-bottom: 1px solid gray;
+  top: 0;
+  display: flex;
+  align-items: center;
+  font-family: "NEXON Lv2 Gothic Bold";
+  z-index: 10;
+}
+
+nav ul {
+  display: inherit;
+  justify-content: space-between;
+  width: 70%;
+  padding-top: 30px;
+  margin-left: 200px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+nav img {
+  height: 80px;
+  width: 80px;
+  border: 1px rgb(226, 226, 226) solid;
+  margin-left: 50px;
+}
+
+.nav-dir :hover {
+  animation: effect 0.9s;
+}
+
+@keyframes effect {
+  0% {
+    letter-spacing: 0.7em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.5;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  border: gray 5px solid;
+}
+
+main {
+}
+
+.container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+}
+
+.container-home {
+  display: flex;
+  width: 100vw;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("https://static.wixstatic.com/media/8d9013_7ed75c2df2fc448abbeee8f31984f879~mv2.jpg/v1/fill/w_1920,h_872,al_c,q_85/Portfolio%20Background.webp");
+}
+
+.container-home img {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 150px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 3rem;
+  width: 200px;
+  margin-top: -50px;
+}
+
+.contact li {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.contact :active,
+.contact :visited,
+.contact :focus {
+  color: white;
+}
+.contact :hover {
+  animation: effect 0.9s;
+}
+
+.container-aboutme {
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: repeat(4, 1fr);
+  z-index: 10;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.container-aboutme img {
+  margin-top: 200px;
+  border-radius: unset;
+  border: unset;
+  width: 100%;
+  height: 400px;
+}
+
+.container-description {
+  height: 500px;
+  color: white;
+  margin-top: -400px;
+  font-size: 2rem;
+  line-height: 80px;
+}
+
+.container-skills {
+  flex-direction: column;
+  align-items: center;
+  margin-top: -100px;
+}
+
+.skills-top {
+  margin-top: 100px;
+}
+
+.skills-top :nth-child(1),
+.skills-top :nth-child(2),
+.skills-top :nth-child(3),
+.skills-bottom :nth-child(1),
+.skills-bottom :nth-child(2) {
+  margin: 30px;
+}
+
+.container-goal {
+  color: white;
+  white-space: pre;
+  font-size: 1.5rem;
+  height: 100vh;
+  width: 100%;
+  margin-bottom: -400px;
+}

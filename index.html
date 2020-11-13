@@ -1,77 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/56b9d755e2.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-    <title>Cover</title>
-  </head>
 
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/56b9d755e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
     <nav>
-      <img src="photos/front.jpeg" alt="" />
-      <h1>안녕하세요 김준형입니다.</h1>
+        <ul>
+            <li class="nav-dir"><a href="#Home">Home</a></li>
+            <li class="nav-dir"><a href="#aboutme">About me</a></li>
+            <li class="nav-dir"><a href="#skills">Skills</a> </li>
+            <li class="nav-dir"><a href="#goal">Goal</a></li>
+        </ul>
     </nav>
-    <main class="info">
-      <div class="info-box info-box__top">
-        <div class="info-cate">
-          <a href="aboutme.html">
-            <h2><i class="fas fa-user"></i></h2>
-          </a>
-          <h4>About me</h4>
-        </div>
-        <div class="info-cate">
-          <a href="chef.html">
-            <h2><i class="fas fa-glass-cheers"></i></h2>
-          </a>
-          <h4>Chef</h4>
-        </div>
-      </div>
-      <div>
-        <img src="photos/identy.jpg" alt="" />
-      </div>
-      <div class="info-box info-box__bottom">
-        <div class="info-cate">
-          <a href="skills.html">
-            <h2><i class="fas fa-laptop-code"></i></h2>
-          </a>
-          <h4>Skills</h4>
-        </div>
-        <div class="info-cate">
-          <a href="purpose.html">
-            <h2><i class="fas fa-map-marker-alt"></i></h2>
-          </a>
-          <h4>Purpose</h4>
-        </div>
-      </div>
-    </main>
-    <div class="contact">
-      <div>
-        <h1>Contact me</h1>
-      </div>
-      <ul>
-        <li>
-          <a href="http://github.com/ddalkigum"
-            ><i class="fab fa-github"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://velog.io/@ddalkigum"
-            ><i class="fab fa-blogger"></i
-          ></a>
-        </li>
-        <li><i class="fas fa-envelope"></i></li>
-      </ul>
-    </div>
+    <main>
+        <div class="container container-home" id="Home">
+            <img src="photos/identy.jpg" alt="">
+            <ul class="contact">
+                <a href="https://github.com/ddalkigum/">
+                    <li>
+                        <i class="fab fa-github"></i>
+                        <h3>Github</h3>
+                    </li>
+                </a>
+                <a href="https://velog.io/@ddalkigum">
+                    <li>
+                        <i class="fab fa-blogger-b"></i>
+                        <h3>Blog</h3>
+                    </li>
+                </a>
 
-    <footer></footer>
-  </body>
+            </ul>
+        </div>
+        <div class="container container-aboutme" id="aboutme">
+            <img src="photos/kong.jpeg" alt="">
+            <img src="photos/trav-japan.jpeg" alt="">
+            <img src="photos/trav-borakai.jpeg" alt="">
+            <img src="photos/trav-usa.jpeg" alt="">
+        </div>
+        <div class="container container-description">
+            저는 동물을 좋아하구요, 여행도 좋아합니다.</br>
+            요즘에는 공부하는게 즐거워서 열심히 하고 있습니다.
+        </div>
+        <div class="container container-skills" id="skills">
+            <div class="skills-top">
+                <img src="photos/html-icon.png">
+                <img src="photos/css-icon.png">
+                <img src="photos/javascript_icon.png">
+            </div>
+            <div class="skills-bottom">
+                <img src="photos/python-icon.webp">
+                <img src="photos/django.png">
+            </div>
+
+            <div class="container container-goal" id="goal">
+                <h2>Goal</h2>
+                <span>
+                    Wecode에서의 목표는 제가 모르는 부분, 궁금했던 부분들
+                    모르는 부분없이 졸업하고 싶습니다.
+
+                    Wecode에서 그리고, 그 이후에는
+                    좋은사람들과 함께 사업을 해보고 싶습니다.
+                </span>
+            </div>
+    </main>
+</body>
+
 </html>
