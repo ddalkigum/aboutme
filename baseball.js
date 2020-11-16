@@ -57,7 +57,10 @@ const paintNumber = number => {
         input.classList.add("hiding")
         answer.classList.remove("hiding")
     }
+    return answer_number
 }
+
+
 
 correct.innerText = createAnswerNumber()
 
@@ -69,6 +72,9 @@ numberForm.addEventListener("submit", handleSubmit = e => {
         handleSubmit()
     }
     paintNumber(currentValue);
+    const compareNumber = (correct_number)=>{
+        currentValue
+    }
 
 })
 
