@@ -35,15 +35,17 @@ const paintNumber = number => {
     compare_number_list = []
     const li = document.createElement("li")
     const span = document.createElement("span")
+    const h1 = document.createElement("h1")
     li.appendChild(span)
+    li.appendChild(h1)
     first = Math.floor(number / 1000)
     second = Math.floor(number / 100) - (first * 10)
     third = Math.floor(number / 10) - (first * 100) - (second * 10)
     fourth = number - (first * 1000) - (second * 100) - (third * 10)
     answer_number.push([first, second, third, fourth])
-    for (let i = 0; i < answer_number.length; i++) {
-        for (let j = i + 1; j < answer_number.length; j++) {
-            if (answer_number[i] === answer_number[j]) {
+    for (let i = 0; i < answer_number[0].length; i++) {
+        for (let j = i + 1; j < answer_number[0].length; j++) {
+            if (answer_number[0][i] === answer_number[0][j]) {
                 alert("같은 숫자는 입력 안되요~")
                 handleSubmit()
             }
@@ -54,23 +56,24 @@ const paintNumber = number => {
         for (let j = 0; j < correct_number.length; j++) {
             if (correct_number[i] === answer_number[0][j]) {
                 if (i === j) {
-                    compare_number_list.push("S")
+                    compare_number_list.push("🟢")
                 } else {
-                    compare_number_list.push("B")
+                    compare_number_list.push("🟡")
                 }
             }
 
         }
 
     }
-    span.innerText = answer_number + compare_number_list
+    span.innerText = answer_number
+    h1.innerText = compare_number_list
     numberList.appendChild(li)
     const numberObject = {
         text: number,
     }
     answer_number_list.push(numberObject)
-    if (compare_number_list[0] === "S" && compare_number_list[1] === "S" && compare_number_list[2] === "S" && compare_number_list[3] === "S") {
-        alert("정답!")
+    if (compare_number_list[0] === "🟢" && compare_number_list[1] === "🟢" && compare_number_list[2] === "🟢" && compare_number_list[3] === "🟢") {
+        alert("정답이에요")
         input.classList.add("hiding")
         answer.classList.remove("hiding")
     }

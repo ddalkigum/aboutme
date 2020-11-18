@@ -1,3 +1,107 @@
+@import "reset.css";
+
 .hiding {
   display: none;
+}
+
+body {
+  background-color: #39311d;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  width: 70%;
+  background-color: #7e7474;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1%;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 15px;
+  color: white;
+}
+
+input {
+  outline: none;
+  border: none;
+  height: 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #c4b6b6;
+  color: #fff;
+  padding: 10px 30px 10px 30px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  margin-top: 5%;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 10px;
+}
+.container {
+  width: 500px;
+  height: 700px;
+  background-color: #ffdd93;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container div {
+  width: 100%;
+}
+
+.number_form {
+  margin-top: 10%;
+}
+
+#answer_box {
+  width: 80%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.rule_container {
+  position: absolute;
+  width: 400px;
+  height: 600px;
+  top: 10%;
+  left: 5%;
+  background-color: #ffdd93;
+}
+
+h1 {
+  width: 70%;
+  height: 2rem;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
