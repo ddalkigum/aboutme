@@ -1,9 +1,5 @@
 @import "reset.css";
 
-.hiding {
-  display: none;
-}
-
 body {
   background-color: #39311d;
   width: 100vw;
@@ -74,7 +70,7 @@ button {
   margin-top: 10%;
 }
 
-#answer_box {
+.answer {
   width: 80%;
   background-color: white;
   display: flex;
@@ -90,18 +86,20 @@ button {
 .rule_container {
   position: absolute;
   width: 400px;
-  height: 600px;
+  height: 400px;
   top: 15%;
   left: 5%;
   background-color: #ffdd93;
 }
 
-h1 {
+h2 {
   width: 70%;
-  height: 2rem;
   margin: auto;
   margin-top: 20px;
   text-align: center;
   font-size: 1.2rem;
   font-weight: 700;
+}
+.hiding {
+  display: none;
 }
