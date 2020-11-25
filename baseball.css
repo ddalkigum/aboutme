@@ -100,6 +100,20 @@ h2 {
   font-size: 1.2rem;
   font-weight: 700;
 }
+
 .hiding {
   display: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .rule_container {
+    position: static;
+    margin-top: -10%;
+  }
 }

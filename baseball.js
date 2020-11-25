@@ -28,6 +28,14 @@ const createAnswerNumber = () => {
     return correct_number
 }
 
+const validNumber = number => {
+    if (number < 0) {
+        alert("마이너스는 입력 안되요~")
+    } else {
+        return number;
+    }
+}
+
 
 // 같은 숫자가 있는지 확인하고 값추가
 const paintNumber = number => {
@@ -43,7 +51,9 @@ const paintNumber = number => {
     third = Math.floor(number / 10) - (first * 100) - (second * 10)
     fourth = number - (first * 1000) - (second * 100) - (third * 10)
     answer_number.push([first, second, third, fourth])
+
     for (let i = 0; i < answer_number[0].length; i++) {
+        console.log(answer_number)
         for (let j = i + 1; j < answer_number[0].length; j++) {
             if (answer_number[0][i] === answer_number[0][j]) {
                 alert("같은 숫자는 입력 안되요~")
@@ -93,10 +103,13 @@ console.log(correct_number)
 numberForm.addEventListener("submit", handleSubmit = e => {
     e.preventDefault();
     const currentValue = input.value
-    if (currentValue / 1000 < 1 || currentValue / 10000 > 1) {
+    if (currentValue < 0) {
+        alert("마이너스는 입력 안되요~")
+    } else if (currentValue / 1000 < 1 || currentValue / 10000 > 1) {
         alert("4자리 숫자를 입력해주세요!")
         handleSubmit()
+    } else {
+        paintNumber(currentValue);
     }
-    paintNumber(currentValue);
 
 })
